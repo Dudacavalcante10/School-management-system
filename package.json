@@ -1,0 +1,12 @@
+{
+  "name": "school-management-system",
+  "version": "1.0.0",
+  "description": "School Management System developed by Kaizen Software Labs.",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "Kaizen Software Labs",
+  "license": "ISC"
+}
