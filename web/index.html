@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Management System</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header id="header" class="header">
+        <div class="container header-container">
+            <section class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>SMS</span>
+            </section>
+            <section class="header-title">
+                <span>School Management System</span>
+            </section>
+            <section class="user-profile">
+                <i class="fas fa-user-circle"></i>
+                <span>Admin</span>
+            </section>
+        </div>
+    </header>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <ul class="menu">
+                <li class="menu-item active">
+                    <i class="fas fa-chart-pie"></i> DASHBOARD
+                </li>
+                <li class="menu-item">
+                    <i class="fas fa-user-graduate"></i> ALUNOS
+                </li>
+                <li class="menu-item">
+                    <i class="fas fa-chalkboard-teacher"></i> PROFESSORES
+                </li>
+                <li class="menu-item">
+                    <i class="fas fa-file-alt"></i> RELATÓRIOS
+                </li>
+                <li class="menu-item">
+                    <i class="fas fa-cog"></i> CONFIGURAÇÕES
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== MAIN ===== -->
+    <main id="main" class="main">
+        <div class="container main-container">
+
+            <!-- ===== SIDEBAR ===== -->
+            <aside id="sidebar" class="sidebar">
+                <ul>
+                    <li class="active">
+                        <i class="fas fa-tachometer-alt"></i> Dashboard
+                    </li>
+                    <li>
+                        <i class="fas fa-user-graduate"></i> Alunos
+                    </li>
+                    <li>
+                        <i class="fas fa-chalkboard-teacher"></i> Professores
+                    </li>
+                    <li>
+                        <i class="fas fa-school"></i> Turmas
+                    </li>
+                    <li>
+                        <i class="fas fa-book"></i> Disciplinas
+                    </li>
+                    <li>
+                        <i class="fas fa-calendar-times"></i> Faltas
+                    </li>
+                    <li>
+                        <i class="fas fa-calendar-alt"></i> Relatórios
+                    </li>
+                    <li>
+                        <i class="fas fa-calendar-check"></i> Calendário
+                    </li>
+                    <li>
+                        <i class="fas fa-cog"></i> Configurações
+                    </li>
+                </ul>
+            </aside>
+
+            <!-- ===== CONTENT ===== -->
+            <section id="content" class="content">
+
+                <div class="content-header">
+                    <h2><i class="fas fa-chart-line"></i> Dashboard</h2>
+                    <p>Visão geral do sistema</p>
+                </div>
+
+                <!-- Cards -->
+                <div class="cards-grid">
+                    <div class="card">
+                        <i class="fas fa-user-graduate card-icon"></i>
+                        <span class="card-number">128</span>
+                        <span class="card-label">Total de Alunos</span>
+                        <a href="#" class="card-link">Ver detalhes →</a>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-chalkboard-teacher card-icon"></i>
+                        <span class="card-number">24</span>
+                        <span class="card-label">Professores</span>
+                        <a href="#" class="card-link">Ver detalhes →</a>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-school card-icon"></i>
+                        <span class="card-number">15</span>
+                        <span class="card-label">Turmas Ativas</span>
+                        <a href="#" class="card-link">Ver detalhes →</a>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-percent card-icon"></i>
+                        <span class="card-number">92%</span>
+                        <span class="card-label">Taxa de Frequência</span>
+                        <a href="#" class="card-link">Ver detalhes →</a>
+                    </div>
+                </div>
+
+                <!-- Atividades Recentes e Avisos -->
+                <div class="two-columns">
+                    <div class="column">
+                        <h3><i class="fas fa-clock"></i> Atividades Recentes</h3>
+                        <ul class="activity-list">
+                            <li>
+                                <span class="activity-text">
+                                    <i class="fas fa-user-plus"></i> Novo aluno João Silva cadastrado
+                                </span>
+                                <span class="activity-time">2 min atrás</span>
+                            </li>
+                            <li>
+                                <span class="activity-text">
+                                    <i class="fas fa-exclamation-triangle"></i> Falta registrada para a turma 3ªA
+                                </span>
+                                <span class="activity-time">15 min atrás</span>
+                            </li>
+                            <li>
+                                <span class="activity-text">
+                                    <i class="fas fa-pencil-alt"></i> Nota lançada para Matemática - 2ºB
+                                </span>
+                                <span class="activity-time">1 hora atrás</span>
+                            </li>
+                            <li>
+                                <span class="activity-text">
+                                    <i class="fas fa-file-pdf"></i> Relatório mensal gerado
+                                </span>
+                                <span class="activity-time">3 horas atrás</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="column">
+                        <h3><i class="fas fa-bullhorn"></i> Avisos Importantes</h3>
+                        <div class="aviso-card">
+                            <strong><i class="fas fa-users"></i> Reunião pedagógica</strong>
+                            <span>24/07 às 14h na sala dos professores</span>
+                        </div>
+                        <div class="aviso-card">
+                            <strong><i class="fas fa-file-signature"></i> Entrega de relatórios</strong>
+                            <span>Prazo final: 30/07</span>
+                        </div>
+                        <div class="aviso-card">
+                            <strong><i class="fas fa-umbrella-beach"></i> Férias escolares</strong>
+                            <span>Período: 15/12 a 31/12</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Versão -->
+                <div class="content-footer">
+                    <i class="fas fa-code"></i>
+                    <span>SCHOOL MANAGEMENT SYSTEM · Versão 1.0.0</span>
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="footer" class="footer">
+        <div class="container footer-container">
+            <span>
+                <i class="fas fa-copyright"></i> Kaizen Software Labs
+            </span>
+            <span>
+                <i class="fas fa-graduation-cap"></i> Desenvolvendo soluções para educação
+            </span>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
